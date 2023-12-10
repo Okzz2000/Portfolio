@@ -7,35 +7,51 @@ import { motion, useInView } from "framer-motion"
 const projectsData = [
     {
         id: 1,
-        title: "Project Title",
-        description: "Project 1 description",
-        image: "/images/projects/1.jpg",
-        tag: ["All", "Web"],
-        previewUrl: "/images/projects/SnackBoxx.pdf"
+        title: "Monster AD",
+        description: "Portrait with energy drink Monster Advertisement",
+        image: "/images/projects/Monster.png",
+        tag: ["All", "Photo"],
+        previewUrl: "/images/projects/Monster.png"
     },
     {
         id: 2,
-        title: "Project Title",
-        description: "Project 2 description",
-        image: "/images/projects/1.jpg",
-        tag: ["All", "Web"],
-        previewUrl: "/"
+        title: "E.Wedel AD",
+        description: "Orange chocolate Advertisement",
+        image: "/images/projects/Toode.png",
+        tag: ["All", "Photo"],
+        previewUrl: "/images/projects/Toode.png"
     },
     {
         id: 3,
-        title: "Project Title",
-        description: "Project 3 description",
-        image: "/images/projects/1.jpg",
-        tag: ["All", "Mobile"],
-        previewUrl: "/"
+        title: "MySushi AD",
+        description: "Tempura Sushi Advertisement",
+        image: "/images/projects/MySushi.png",
+        tag: ["All", "Photo"],
+        previewUrl: "/images/projects/MySushi.png"
     },
     {
         id: 4,
-        title: "Project Title",
-        description: "Project 4 description",
-        image: "/images/projects/1.jpg",
-        tag: ["All", "Mobile"],
-        previewUrl: "/"
+        title: "Technological Takeover",
+        description: "Staged Portrait",
+        image: "/images/projects/Becca.png",
+        tag: ["All", "Photo"],
+        previewUrl: "/images/projects/Becca.png"
+    },
+    {
+        id: 5,
+        title: "Comics style Me",
+        description: "Monocolor comic style portrait of me",
+        image: "/images/projects/illustration.png",
+        tag: ["All", "Illustration"],
+        previewUrl: "/images/projects/illustration.png"
+    },
+    {
+        id: 6,
+        title: "Words Shark",
+        description: "Poster with a Shark made of words",
+        image: "/images/projects/Shark.png",
+        tag: ["All", "Illustration"],
+        previewUrl: "/images/projects/Shark.png"
     }
 ]
 
@@ -67,13 +83,13 @@ const ProjectsSection = () => {
             />
             <ProjectTag
                 onClick={handleTagChange}
-                name="Web"
-                isSelected={tag === "Web"}
+                name="Photo"
+                isSelected={tag === "Photo"}
             />
             <ProjectTag
                 onClick={handleTagChange}
-                name="Mobile"
-                isSelected={tag === "Mobile"}
+                name="Illustration"
+                isSelected={tag === "Illustration"}
             />
         </div>
         <ul ref={ref} className='grid md:grid-cols-3 gap-8 md:gap-12'>
